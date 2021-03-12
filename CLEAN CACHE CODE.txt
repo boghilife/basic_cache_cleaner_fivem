@@ -1,0 +1,21 @@
+@echo off
+color 0b
+
+ECHO Clean Cache by boghilife 2020/21
+ECHO BENVENUTO NEL PROGRAMMA DI PULIZIA CACHE!
+:choice
+set /P c=Sei sicuro di voler procedere[Y/N]?
+if /I "%c%" EQU "Y" goto :cache
+if /I "%c%" EQU "N" goto :nope
+goto :choice
+
+
+:cache
+cd C:\Users\%username%\AppData\Local\FiveM\FiveM.app\cache
+del browser, db, priv, servers, subprocess, unconfirmed /q /s
+exit
+
+:nope
+ECHO Operazione Annullata!
+PAUSE
+EXIT
