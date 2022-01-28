@@ -1,2 +1,2 @@
-# basic_chache_cleaner_fivem [OUTDATED]
+# [OUTDATED]
 A basic Cache Cleaner write in Batch for Fivem.
